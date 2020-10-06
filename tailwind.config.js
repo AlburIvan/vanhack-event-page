@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       colors: {
         body: '#FCFDFF',
+        section: '#F3F7FF',
         paragraph: '#828282',
         primary: '#01569C',
         'blue-vanhack': '#2F80ED',

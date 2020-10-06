@@ -106,19 +106,37 @@
 
     <section id="upcoming-events"></section>
 
-    <section id="partners" class="mb-12"></section>
+    <section id="partners" class="p-6 mb-12 bg-section">
+      <h2 class="mb-2 text-3xl font-medium leading-tight text-center sm:font-bold sm:text-5xl">Partners</h2>
+      <div class="w-3/6 h-1 mx-auto mb-8 rounded-sm bg-van-gradient"></div>
+      <div class="flex flex-col items-center justify-center space-y-4">
+        <a href="http://vanhack.com" class="">
+          <img src="./assets/images/vanhack-logo.svg" alt="VanHack blue logo" />
+        </a>
+        <a href="http://vanhack.com" class="">
+          <img src="./assets/images/vanhack-logo.svg" alt="VanHack blue logo" />
+        </a>
+        <a href="http://vanhack.com" class="">
+          <img src="./assets/images/vanhack-logo.svg" alt="VanHack blue logo" />
+        </a>
+        <a href="http://vanhack.com" class="">
+          <img src="./assets/images/vanhack-logo.svg" alt="VanHack blue logo" />
+        </a>
+      </div>
+    </section>
     <section id="newsletter" class="flex flex-col items-center px-6 mb-12">
-      <h2 class="mb-6 text-2xl font-medium leading-tight sm:font-bold sm:text-5xl">Subscribe to our newsletter</h2>
+      <h2 class="mb-6 text-2xl font-medium leading-tight text-center sm:font-bold sm:text-5xl">Subscribe to our newsletter</h2>
       <p class="mb-4 font-light text-center text-paragraph">
         Be the first to know when an event is available, so you can secure your spot. Don’t miss anything!
       </p>
-      <form class="">
+      <form class="text-center">
         <input
           type="email"
           name="email"
           id="email"
           placeholder="Enter your email here"
           class="w-full px-3 py-3 mb-10 shadow-card max-w-subscribe-input"
+          required
         />
         <button
           type="submit"
