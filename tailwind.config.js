@@ -1,7 +1,11 @@
 module.exports = {
-  purge: ["./public/**/*.html"],
+  purge: ['./public/**/*.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        body: '#FCFDFF',
+      },
+    },
   },
   variants: {},
   plugins: [],
