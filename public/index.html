@@ -17,20 +17,43 @@
           <img src="./assets/images/hero-banner-small.png" alt="" class="w-full h-56" />
         </picture>
       </div>
-      <a href="http://vanhack.com" class="z-10 items-center justify-center mb-8">
+      <a href="http://vanhack.com" class="z-10 items-center justify-center mb-8 sm:self-start sm:ml-8 sm:mt-4">
         <img src="./assets/images/vanhack-logo.svg" alt="VanHack blue logo" />
       </a>
-      <p class="z-10 flex flex-col font-light leading-none tracking-tight text-center text-white text-md">
+      <p class="z-10 flex flex-col font-light leading-none tracking-tight text-center text-white text-md sm:text-4xl sm:font-medium">
         The next
-        <span class="py-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-van-gradient">VanHackathon</span>
+        <span class="py-2 text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r bg-van-gradient sm:text-6xl">VanHackathon</span>
         is around the corner
       </p>
 
       <!-- Countdown -->
-      <div class="z-10 w-56 h-16 mt-2 bg-white rounded-md"></div>
+      <div
+        class="relative z-10 flex items-center justify-around h-16 p-10 my-4 bg-white border border-gray-400 border-solid rounded-md w-card max-w-countdown"
+      >
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-2xl font-bold text-title">7</h1>
+          <p class="text-paragraph">DAYS</p>
+        </div>
+        <h1 class="text-2xl font-bold text-paragraph">:</h1>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-2xl font-bold text-title">15</h1>
+          <p class="text-paragraph">HOURS</p>
+        </div>
+        <h1 class="text-2xl font-bold text-paragraph">:</h1>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-2xl font-bold text-title">27</h1>
+          <p class="text-paragraph">MINUTES</p>
+        </div>
+        <h1 class="text-2xl font-bold text-paragraph">:</h1>
+        <div class="flex flex-col items-center justify-center">
+          <h1 class="text-2xl font-bold text-title">09</h1>
+          <p class="text-paragraph">SECONDS</p>
+        </div>
+        <button class="absolute px-12 py-3 text-white rounded-md -bottom-8 bg-van-gradient">Register</button>
+      </div>
     </header>
 
-    <section id="about-vanhack" class="flex flex-col-reverse px-6 text-center sm:mt-24 sm:grid md:max-w-4xl sm:grid-cols-2">
+    <section id="about-vanhack" class="flex flex-col-reverse px-6 mt-24 text-center sm:mt-24 sm:grid md:max-w-4xl sm:grid-cols-2">
       <div class="flex flex-col items-center mt-16 sm:mt-0 sm:grid-cols-2 sm:grid">
         <div
           class="grid hidden grid-cols-1 px-12 py-4 mb-12 text-center transition-all duration-300 bg-white rounded-md sm:block w-event-card hover:text-white h-event-card hover:bg-blue-vanhack-500 shadow-card hover:shadow-hovered-card"
@@ -80,7 +103,7 @@
 
         <a
           href="#popular-events"
-          class="px-16 py-3 no-underline transition-all duration-300 border-2 border-r-2 border-solid hover:bg-blue-vanhack-500 hover:text-white text-blue-vanhack border-blue-vanhack sm:hidden"
+          class="px-16 py-3 mb-10 no-underline transition-all duration-300 border-2 border-r-2 border-solid hover:bg-blue-vanhack-500 hover:text-white text-blue-vanhack border-blue-vanhack sm:hidden"
         >
           Show me more
         </a>
@@ -102,12 +125,119 @@
       </div>
     </section>
 
-    <section id="popular-events"></section>
+    <section id="popular-events" class="p-6 mb-12 bg-section">
+      <h2 class="mb-2 text-4xl font-medium leading-tight text-center text-title sm:font-bold sm:text-5xl">Popular events</h2>
+      <div class="w-3/6 h-1 mx-auto mb-16 rouned-sm bg-van-gradient"></div>
+      <div class="flex flex-col items-center justify-center mb-6 space-y-10">
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 transform scale-110 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-premium"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-secondary">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-secondary">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-secondary">We are looking for people like you</p>
+          </div>
+        </article>
 
-    <section id="upcoming-events"></section>
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-highlight"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-accent">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-accent">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-accent">We are looking for people like you</p>
+          </div>
+        </article>
+
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-highlight"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-accent">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-accent">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-accent">We are looking for people like you</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="upcoming-events" class="p-6 mb-2">
+      <h2 class="mb-2 text-3xl font-medium leading-tight text-center text-title sm:font-bold sm:text-5xl">Upcoming events</h2>
+      <div class="w-3/6 h-1 mx-auto mb-12 rounded-sm bg-van-gradient"></div>
+      <div class="flex flex-no-wrap space-x-10 overflow-x-auto scrolling-touch h-upcoming-card-container">
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 ml-6 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-premium"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-secondary">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-secondary">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-secondary">We are looking for people like you</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 ml-6 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-card"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-secondary">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-secondary">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-secondary">We are looking for people like you</p>
+          </div>
+        </article>
+        <article
+          class="flex flex-col justify-between flex-grow-0 flex-shrink-0 ml-6 bg-white rounded-md cursor-pointer h-upcoming-card w-upcoming-card shadow-card"
+        >
+          <div class="relative h-48">
+            <img class="absolute" src="https://picsum.photos/288/174" alt="" srcset="" />
+            <p class="absolute bottom-0 px-5 py-1 text-sm font-medium leading-tight text-white top-10 bg-secondary">Webinar</p>
+            <div class="absolute top-0 right-0 w-12 h-12 p-2 mt-2 mr-2 text-center rounded-full bg-secondary">
+              <p class="text-xs leading-tight text-white uppercase">03 OCT</p>
+            </div>
+          </div>
+          <div class="p-4">
+            <h2 class="text-lg font-semibold leading-tight select-none text-title">Be the next VanHacker</h2>
+            <p class="text-sm leading-tight select-none text-secondary">We are looking for people like you</p>
+          </div>
+        </article>
+      </div>
+      <p class="my-4 font-light text-center sm:mt-6 text-paragraph">
+        Swipe/Scroll to see more events
+        <br />
+        Touch on any of them to see more details
+      </p>
+    </section>
 
     <section id="partners" class="p-6 mb-12 bg-section">
-      <h2 class="mb-2 text-3xl font-medium leading-tight text-center sm:font-bold sm:text-5xl">Partners</h2>
+      <h2 class="mb-2 text-3xl font-medium leading-tight text-center text-title sm:font-bold sm:text-5xl">Partners</h2>
       <div class="w-3/6 h-1 mx-auto mb-8 rounded-sm bg-van-gradient"></div>
       <div class="flex flex-col items-center justify-center space-y-4">
         <a href="http://vanhack.com" class="">
@@ -124,8 +254,9 @@
         </a>
       </div>
     </section>
+
     <section id="newsletter" class="flex flex-col items-center px-6 mb-12">
-      <h2 class="mb-6 text-2xl font-medium leading-tight text-center sm:font-bold sm:text-5xl">Subscribe to our newsletter</h2>
+      <h2 class="mb-6 text-2xl font-medium leading-tight text-center text-title sm:font-bold sm:text-5xl">Subscribe to our newsletter</h2>
       <p class="mb-4 font-light text-center text-paragraph">
         Be the first to know when an event is available, so you can secure your spot. Don’t miss anything!
       </p>
@@ -140,7 +271,7 @@
         />
         <button
           type="submit"
-          class="px-16 py-3 no-underline transition-all duration-300 border-2 border-r-2 border-solid hover:bg-blue-vanhack-500 hover:text-white text-blue-vanhack border-blue-vanhack"
+          class="px-16 py-3 no-underline transition-all duration-300 border border-solid hover:bg-blue-vanhack-500 hover:text-white text-blue-vanhack border-blue-vanhack"
         >
           Notify me
         </button>
