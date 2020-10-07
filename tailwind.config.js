@@ -16,7 +16,12 @@ module.exports = {
         'blue-vanhack': '#2F80ED',
         'dark-blue': '#0471C8',
       },
-
+      scale: {
+        '85': '.85',
+      },
+      fontSize: {
+        '7xl': '5rem',
+      },
       boxShadow: {
         card: '0px 4px 19px rgba(0, 0, 0, 0.09);',
         highlight: '0px 2px 23px rgba(239, 92, 17, 0.45)',
@@ -38,6 +43,7 @@ module.exports = {
         'event-card': '220px',
         'upcoming-card': '240px',
         'upcoming-card-container': '280px',
+        'hero-banner': '530px',
       },
       backgroundImage: {
         'hero-image': "url('/assets/images/hero_photo.png')",
@@ -52,6 +58,9 @@ module.exports = {
       },
       inset: {
         '-8': '-2.5rem',
+      },
+      gridTemplateColumns: {
+        'about': '0.5fr 0.5fr',
       },
     },
   },
