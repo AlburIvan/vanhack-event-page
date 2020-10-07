@@ -46,7 +46,6 @@ module.exports = {
         'hero-banner': '530px',
       },
       backgroundImage: {
-        'hero-image': "url('/assets/images/hero_photo.png')",
         'van-gradient': 'linear-gradient(90deg, rgba(4,117,206,1) 0%, rgba(36,193,202,1) 100%);',
       },
       backgroundColor: {
